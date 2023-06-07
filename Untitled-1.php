@@ -107,10 +107,10 @@ float:right;
 <div id="wrapper">
  <div class=" nav nav-pills">
      <ul class="list-inline" style="padding:5px;">
-       <li class="btn btn-default"><a href="billing.php">Home</a></li>
-       <li class="btn btn-default"><a href="bill.php">Billing</a></li>
-       <li class="btn btn-default"><a href="user.php">Admins</a></li>
-       <li class="btn btn-default"><a href="logout.php">Logout</a></li>
+       <li class="btn btn-default"><a href="/billing/billing.php">Home</a></li>
+       <li class="btn btn-default"><a href="/billing/bill.php">Billing</a></li>
+       <li class="btn btn-default"><a href="/billing/user.php">Admins</a></li>
+       <li class="btn btn-default"><a href="/billing/logout.php">Logout</a></li>
      </ul>
  </div>
 </div>
@@ -180,8 +180,8 @@ while($row = mysql_fetch_array($result))
 
   echo "<td>" . $row['address'] . "</td>";
   echo "<td>" . $row['contact'] . "</td>";
- echo "<td><a rel='facebox' href='edit.php?id=".$row['id']."'>Edit </a>| ";
- echo "<a rel='facebox' href='del.php?id=".$row['id']."'>Del</td>";
+ echo "<td><a rel='facebox' href='/billing/edit.php?id=".$row['id']."'>Edit </a>| ";
+ echo "<a rel='facebox' href='/billing/del.php?id=".$row['id']."'>Del</td>";
   echo "</tr>";
   }
 echo "</table>";
