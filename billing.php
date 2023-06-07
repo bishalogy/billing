@@ -146,13 +146,13 @@ float:right;
   <h1><center><b style="font-family: 'Kumar One Outline', cursive;
 font-family: 'Bungee Outline', cursive; font-size:40pt;">TELEPHONE BILLING SYSTEM</b></center></h1>
   <div  class=" glyphicon glyphicon-user"style="color:green; font-size:14pt; margin-left:990px;"> 
-  <b><?php echo $sessionname;?></b><a href="logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp; &nbsp;Logout</span></a>
+  <b><?php echo $sessionname;?></b><a href="/billing/logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp; &nbsp;Logout</span></a>
   </div>
   <ul class="nav nav-pills">
-    <li class="btn btn-default btn-xs"><a href="billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-    <li><a href="bill.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Billing</a></li>
-    <li><a href="user.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Admins</a></li>
-    <li><a href="clients.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Customers</a></li>
+    <li class="btn btn-default btn-xs"><a href="/billing/billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+    <li><a href="/billing/bill.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Billing</a></li>
+    <li><a href="/billing/user.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Admins</a></li>
+    <li><a href="/billing/clients.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Customers</a></li>
   </ul>
 <hr color="#999999" />
   <div class="tab-content">
@@ -168,7 +168,7 @@ font-family: 'Bungee Outline', cursive; font-size:40pt;">TELEPHONE BILLING SYSTE
               <div class="panel-body">
                <h1 align="center" style="font:Verdana, Geneva, sans-serif; font-weight:bolder;"><?php echo $client; ?></h1>
               </div>
-              <a href="clients.php"><div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
+              <a href="/billing/clients.php"><div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
          </div>
       </div>
     </div>
@@ -181,7 +181,7 @@ font-family: 'Bungee Outline', cursive; font-size:40pt;">TELEPHONE BILLING SYSTE
               <div class="panel-body">
                <h1 align="center" style="font:Verdana, Geneva, sans-serif; font-weight:bolder;"><?php echo $users; ?></h1>
               </div>
-              <a href="user.php"><div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
+              <a href="/billing/user.php"><div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
          </div>
       </div>
     </div>
@@ -203,7 +203,7 @@ font-family: 'Bungee Outline', cursive; font-size:40pt;">TELEPHONE BILLING SYSTE
 			  ?>
               </h1>
               </div>
-             <a href="bill.php"> <div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
+             <a href="/billing/bill.php"> <div class="panel-footer"><span class="alert-link glyphicon glyphicon-circle-arrow-right"></span>View</div></a>
          </div>
       </div>
     </div>
