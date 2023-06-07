@@ -97,13 +97,13 @@ float:right;
   <h1><center><b style="font-family: 'Kumar One Outline', cursive;
 font-family: 'Bungee Outline', cursive; font-size: 40pt;">TELEPHONE BILLING SYSTEM</b></center></h1>
   <div  class=" glyphicon glyphicon-user"style="color:green; font-size:14pt; margin-left:990px;"> 
-  <b><?php echo $sessionname;?></b><a href="logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp; &nbsp;Logout</span></a>
+  <b><?php echo $sessionname;?></b><a href="/billing/logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp; &nbsp;Logout</span></a>
   </div>
   <ul class="nav nav-pills">
-    <li><a href="billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-    <li><a href="bill.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Billing</a></li>
-    <li><a href="user.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Admins</a></li>
-    <li class="btn btn-default btn-xs"><a href="clients.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Customers</a></li>
+    <li><a href="/billing/billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+    <li><a href="/billing/bill.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Billing</a></li>
+    <li><a href="/billing/user.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Admins</a></li>
+    <li class="btn btn-default btn-xs"><a href="/billing/clients.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Customers</a></li>
   </ul>
 <hr color="#999999" />
 <div  style="overflow:scroll; height:350px;">
@@ -140,7 +140,7 @@ font-family: 'Bungee Outline', cursive; font-size: 40pt;">TELEPHONE BILLING SYST
             <div class="panel-heading">
                 <div class="panel-title"><h5>System Customers</h5>
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal"> + Add Customers</button>
-                <a href="deleteclient.php"><button class="btn btn-danger btn-xs">Delete all</button></a>
+                <a href="/billing/deleteclient.php"><button class="btn btn-danger btn-xs">Delete all</button></a>
                 </div>
             </div>
               <div class="panel-body">
@@ -167,8 +167,8 @@ while($row = mysql_fetch_array($result))
   echo "<td>" . $row['lname'] . "</td>";
   echo "<td>" . $row['address'] . "</td>";
   echo "<td>" . $row['contact'] . "</td>";
- echo "<td><a rel='facebox' href='edit.php?id=".$row['id']."'><button class=\"btn btn-default btn-xs\"><span class=\"glyphicon glyphicon-edit\"></span></button> </a>| ";
- echo "<a rel='facebox' href='del.php?id=".$row['id']."'><button class=\"btn btn-danger btn-xs\"><span class=\"glyphicon glyphicon-trash \"></span></button></td>";
+ echo "<td><a rel='facebox' href='/billing/edit.php?id=".$row['id']."'><button class=\"btn btn-default btn-xs\"><span class=\"glyphicon glyphicon-edit\"></span></button> </a>| ";
+ echo "<a rel='facebox' href='/billing/del.php?id=".$row['id']."'><button class=\"btn btn-danger btn-xs\"><span class=\"glyphicon glyphicon-trash \"></span></button></td>";
   echo "</tr>";
   }
 echo "</table>";
