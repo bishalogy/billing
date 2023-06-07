@@ -101,6 +101,6 @@ while($row = mysql_fetch_array($result))
 </div>
 </div>
 <CENTER><button type="button"  class="btn btn-default " onclick="printDiv(data)"><span
-class=" glyphicon glyphicon-print"></span>&nbsp;Print Bill</button>&nbsp;<a href="bill.php"><button class="btn btn-danger"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Go back</button></a></CENTER>
+class=" glyphicon glyphicon-print"></span>&nbsp;Print Bill</button>&nbsp;<a href="/billing/bill.php"><button class="btn btn-danger"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Go back</button></a></CENTER>
 </body>
 </html>
